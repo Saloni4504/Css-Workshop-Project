@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap");
+
+body, html {
+    margin: 0;
+}
+
+/* Section Padding */
+.section-padding-100 {
+    padding-top: 100px;
+    padding-bottom: 100px; }
+  
+.section-padding-100-0 {
+    padding-top: 100px;
+    padding-bottom: 0; }
+  
+.section-padding-0-100 {
+    padding-top: 0;
+    padding-bottom: 100px; }
+  
+.section-padding-100-70 {
+    padding-top: 100px;
+    padding-bottom: 70px; }
+
+
+.row {
+    margin-right: -10px;
+    margin-left: -10px; } 
+
+.single-benefits-area {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 50px;
+    transition: transform 0.3s ease; /* Adding transition for smooth animation */
+}
+.single-benefits-area:hover {
+    transform: scale(1.1); /* Zooming effect on hover */
+}
+.single-benefits-area img {
+    margin-bottom: 30px;
+}
+.single-benefits-area p {
+    margin-bottom: 0;
+}
+
+/* Portfolio Area CSS */
+.gg-portfolio-filter {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.gg-portfolio-filter .btn {
+    transition-duration: 300ms;
+    padding: 0;
+    font-size: 20px;
+    color: #707070;
+    font-weight: 500;
+    background-color: transparent;
+    padding: 0 20px;
+}
+@media only screen and (max-width: 767px) {
+    .gg-portfolio-filter .btn {
+        font-size: 16px;
+        padding: 0 5px;
+    }
+}
+.gg-portfolio-filter .btn:hover, 
+.gg-portfolio-filter .btn:focus {
+    color: #70c745;
+    box-shadow: none;
+}
+
+.gg-portfolio.row {
+    margin-right: -10px;
+    margin-left: -10px;
+}
+.gg-portfolio .col-12 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.single_portfolio_item {
+    position: relative;
+    z-index: 10;
+    margin-top: 20px;
+    overflow: hidden;
+    height: 400px;
+    transition-duration: 500ms;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .single_portfolio_item {
+        height: 290px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .single_portfolio_item {
+        height: 300px;
+    }
+}
+.single_portfolio_item .portfolio-thumbnail {
+    transition-duration: 500ms;
+    width: calc(100% - 20px);
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 10px;
+    right: 10px;
+    background-repeat: no-repeat;
+}
+.single_portfolio_item .portfolio-hover-overlay {
+    width: calc(100% - 20px);
+    height: 100%;
+    top: 0;
+    left: 10px;
+    right: 10px;
+    transition-duration: 500ms;
+    background-color: rgba(112, 199, 69, 0.8);
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+}
+.single_portfolio_item .portfolio-hover-overlay a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+}
+.single_portfolio_item .portfolio-hover-overlay a .port-hover-text h3 {
+    font-size: 28px;
+    color: #ffffff;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .single_portfolio_item .portfolio-hover-overlay a .port-hover-text h3 {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .single_portfolio_item .portfolio-hover-overlay a .port-hover-text h3 {
+        font-size: 18px;
+    }
+}
+.single_portfolio_item .portfolio-hover-overlay a .port-hover-text h5 {
+    font-size: 18px;
+    margin-bottom: 0;
+    color: #ffffff;
+    font-weight: 400;
+}
+@media only screen and (max-width: 767px) {
+    .single_portfolio_item .portfolio-hover-overlay a .port-hover-text h5 {
+        font-size: 14px;
+    }
+}
+.single_portfolio_item:hover {
+    transform: translateY(-15px);
+}
+.single_portfolio_item:hover .portfolio-hover-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.portfolio-page .single_portfolio_item {
+    height: 320px;
+}
+
+/* Footer Section */
+.footer_section {
+    background-color: #222831;
+    color: #ffffff;
+    padding: 75px 0 40px 0;
+    text-align: center;
+}
+.footer_section h4,
+.footer_section .footer-logo {
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+.footer_section p {
+    color: #dbdbdb;
+}
+.footer_section .footer_col {
+    margin-bottom: 30px;
+}
+.footer_section .footer_contact .contact_link_box {
+    display: flex;
+    flex-direction: column;
+}
+.footer_section .footer_contact .contact_link_box a {
+    margin: 5px 0;
+    color: #ffffff;
+}
+.footer_section .footer_contact .contact_link_box a i {
+    margin-right: 5px;
+}
+.footer_section .footer_contact .contact_link_box a:hover {
+    color: #ffbe33;
+}
+.footer_section .footer-logo {
+    font-size: 38px;
+    line-height: 1;
+}
+.footer_section .footer_social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.footer_section .footer_social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222831;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    margin: 0 2.5px;
+    font-size: 18px;
+}
+.footer_section .footer_social a:hover {
+    color: #ffbe33;
+}
+.footer_section .footer-info {
+    text-align: center;
+    margin-top: 25px;
+}
+.footer_section .footer-info p {
+    margin: 0;
+}
+.footer_section .footer-info p a {
+    color: inherit;
+}
